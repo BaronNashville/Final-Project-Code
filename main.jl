@@ -99,7 +99,7 @@ println("Minkowksi distance between manifold and fixed points of R = " * string(
 
 θ = get_theta(a, manifold_range, manifold_num_points, location)
 
-θ,L = candidate_finder([θ₁,θ₂,0], a, σ, r)
+θ,L = candidate_finder([θ[1],θ[2],0], a, σ, r)
 
 println("θ = " * string(θ) * ", L = " * string(L))
 
